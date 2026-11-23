@@ -1,0 +1,481 @@
+{
+  "about": [
+    "The consoles of the menu, in menu order.",
+    "system: the RetroPie system, which is also the name of its folder under ~/RetroPie/roms.",
+    "also: more RetroPie systems that show under the same console. runs_as: the system whose emulators run a folder that is no RetroPie system itself.",
+    "logo: the file name of the logo in the theme carbon-2021 or in assets/logos when it differs from the system. logo null shows the name as text.",
+    "endings: file endings of games beyond those of the RetroPie system, such as .zip for archives that RetroArch unpacks.",
+    "names arcade: the files carry the short names of arcade games (mslug.zip). The full names come from the game lists of the arcade emulators.",
+    "strips: patterns for the games whose screenshots make the six strips of the console screen, most wanted first.",
+    "A console shows in the menu once its folder holds games."
+  ],
+  "consoles": [
+    {
+      "system": "arcade",
+      "also": [
+        "fba",
+        "mame-libretro"
+      ],
+      "name": "Arcade",
+      "group": "ARCADE",
+      "maker": "ARCADE",
+      "names": "arcade",
+      "strips": [
+        "^pacman$",
+        "^dkong$",
+        "^sf2ce$",
+        "^outrun$",
+        "^galaga$",
+        "^tmnt$"
+      ]
+    },
+    {
+      "system": "neogeo",
+      "name": "Neo Geo",
+      "group": "ARCADE",
+      "maker": "SNK",
+      "year": 1990,
+      "names": "arcade",
+      "strips": [
+        "^mslug$",
+        "^kof98$",
+        "^garou$",
+        "^samsho2$",
+        "^fatfury2$",
+        "^lastblad$"
+      ]
+    },
+    {
+      "system": "nes",
+      "name": "Entertainment System",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1985,
+      "strips": [
+        "^Super Mario Bros\\. \\(",
+        "^Legend of Zelda, The \\(",
+        "^Mega Man 2",
+        "^Metroid \\(",
+        "^Super Mario Bros\\. 3",
+        "^Castlevania \\(",
+        "^Contra \\(",
+        "^Donkey Kong \\("
+      ]
+    },
+    {
+      "system": "famicom",
+      "runs_as": "nes",
+      "name": "Famicom",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1983,
+      "strips": [
+        "^Super Mario Bros \\(25 Anniversary",
+        "^Rockman 2",
+        "^Contra \\(Japan",
+        "^Final Fantasy III",
+        "^Gradius II",
+        "^TwinBee \\(Japan",
+        "^Pac-Land"
+      ]
+    },
+    {
+      "system": "fds",
+      "name": "Famicom Disk System",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1986,
+      "strips": [
+        "^Zelda no Densetsu",
+        "^Metroid",
+        "^Super Mario Bros\\. 2",
+        "^Akumajou Dracula",
+        "^Hikari Shinwa",
+        "^Yume Koujou"
+      ]
+    },
+    {
+      "system": "gameandwatch",
+      "endings": [".zip"],
+      "name": "Game & Watch",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1980,
+      "strips": [
+        "^Donkey Kong \\(Nintendo",
+        "^Mario Bros\\. \\(Nintendo",
+        "^Parachute \\(Nintendo",
+        "^Octopus \\(Nintendo",
+        "^Donkey Kong II \\(Nintendo",
+        "^Fire \\(Nintendo",
+        "\\(Nintendo"
+      ]
+    },
+    {
+      "system": "gb",
+      "name": "Game Boy",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1989,
+      "strips": [
+        "^Tetris \\(World\\)$",
+        "^Super Mario Land \\(World\\)$",
+        "^Pokemon - Blue",
+        "^Legend of Zelda, The - Link's Awakening \\(USA, Europe\\)$"
+      ]
+    },
+    {
+      "system": "gbc",
+      "name": "Game Boy Color",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1998,
+      "strips": [
+        "^Pokemon - Crystal",
+        "^Legend of Zelda, The - Oracle of Ages",
+        "^Super Mario Bros\\. Deluxe",
+        "^Wario Land 3",
+        "^Pokemon - Gold",
+        "^Legend of Zelda, The - Link's Awakening DX",
+        "^Metal Gear Solid"
+      ]
+    },
+    {
+      "system": "gba",
+      "name": "Game Boy Advance",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 2001,
+      "strips": [
+        "^Pokemon - Emerald",
+        "^Mario Kart - Super Circuit",
+        "^Legend of Zelda, The - The Minish Cap",
+        "^Metroid Fusion",
+        "^Advance Wars \\(",
+        "^Super Mario Advance \\(",
+        "^Golden Sun \\("
+      ]
+    },
+    {
+      "system": "snes",
+      "name": "Super Nintendo",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1991,
+      "strips": [
+        "^Super Mario World \\(",
+        "^Legend of Zelda, The - A Link to the Past",
+        "^Super Metroid",
+        "^Donkey Kong Country \\(USA\\)$",
+        "^Chrono Trigger",
+        "^Super Mario Kart",
+        "^Street Fighter II Turbo"
+      ]
+    },
+    {
+      "system": "sfc",
+      "runs_as": "snes",
+      "name": "Super Famicom",
+      "group": "NINTENDO",
+      "maker": "NINTENDO",
+      "year": 1990,
+      "strips": [
+        "^Final Fantasy VI",
+        "^Dragon Quest V ",
+        "^Seiken Densetsu 3",
+        "^Rockman 7",
+        "^Romancing SaGa 3",
+        "^Gokujou Parodius",
+        "^Final Fantasy V "
+      ]
+    },
+    {
+      "system": "sg-1000",
+      "name": "SG-1000",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1983,
+      "strips": [
+        "^Flicky",
+        "^Girl's Garden",
+        "^Congo Bongo",
+        "^Zaxxon",
+        "^Wonder Boy",
+        "^Gulkave",
+        "^Ninja Princess"
+      ]
+    },
+    {
+      "system": "markiii",
+      "runs_as": "mastersystem",
+      "name": "Mark III",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1985,
+      "strips": [
+        "^Alex Kidd",
+        "^Fantasy Zone",
+        "^Hang.?On",
+        "^Phantasy Star",
+        "^Space Harrier",
+        "^Out ?Run"
+      ]
+    },
+    {
+      "system": "mastersystem",
+      "name": "Master System",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1986,
+      "strips": [
+        "^Sonic The Hedgehog \\(",
+        "^Alex Kidd in Miracle World",
+        "^Wonder Boy III",
+        "^Phantasy Star",
+        "^Shinobi",
+        "^Castle of Illusion",
+        "^Out ?Run"
+      ]
+    },
+    {
+      "system": "megadrive",
+      "name": "Mega Drive",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1988,
+      "strips": [
+        "^Sonic The Hedgehog \\(",
+        "^Streets of Rage 2",
+        "^Golden Axe \\(",
+        "^Gunstar Heroes",
+        "^Revenge of Shinobi",
+        "^Castle of Illusion",
+        "^Altered Beast"
+      ]
+    },
+    {
+      "system": "megadrive-japan",
+      "runs_as": "megadrive",
+      "name": "Mega Drive Japan",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1988,
+      "tag": "JAPAN",
+      "logo": "megadrive",
+      "strips": [
+        "^Bare Knuckle III",
+        "^Monster World IV",
+        "^Pulseman",
+        "^Thunder Force IV",
+        "^Puyo Puyo \\(",
+        "^Sonic the Hedgehog \\(",
+        "^Golden Axe III"
+      ]
+    },
+    {
+      "system": "segacd",
+      "name": "Mega-CD",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1991,
+      "strips": [
+        "^Sonic CD",
+        "^Snatcher",
+        "^Final Fight CD",
+        "^Lunar",
+        "^Ecco",
+        "^Shining Force CD",
+        "^Earthworm Jim"
+      ]
+    },
+    {
+      "system": "sega32x",
+      "name": "32X",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1994,
+      "strips": [
+        "^Knuckles' Chaotix",
+        "^Virtua Fighter",
+        "^Doom",
+        "^Star Wars Arcade",
+        "^Virtua Racing",
+        "^Kolibri"
+      ]
+    },
+    {
+      "system": "gamegear",
+      "name": "Game Gear",
+      "group": "SEGA",
+      "maker": "SEGA",
+      "year": 1990,
+      "strips": [
+        "^Sonic The Hedgehog \\(",
+        "^Shinobi",
+        "^Columns",
+        "^Wonder Boy \\(",
+        "^Sonic Chaos",
+        "^Castle of Illusion",
+        "^Streets of Rage"
+      ]
+    },
+    {
+      "system": "tg16",
+      "runs_as": "pcengine",
+      "name": "TurboGrafx-16",
+      "group": "NEC",
+      "maker": "NEC",
+      "year": 1989,
+      "strips": [
+        "^Bonk's Adventure",
+        "^R-Type",
+        "^Blazing Lazers",
+        "^Splatterhouse",
+        "^Ninja Spirit",
+        "^Military Madness",
+        "^Bomberman"
+      ]
+    },
+    {
+      "system": "pcengine",
+      "name": "PC Engine",
+      "group": "NEC",
+      "maker": "NEC",
+      "year": 1987,
+      "strips": [
+        "^PC Genjin \\(",
+        "^R-Type",
+        "^Gradius \\(",
+        "^Bomber ?man \\(",
+        "^Gunhed",
+        "^Parodius",
+        "^Salamander"
+      ]
+    },
+    {
+      "system": "supergrafx",
+      "runs_as": "pcengine",
+      "name": "SuperGrafx",
+      "group": "NEC",
+      "maker": "NEC",
+      "year": 1989,
+      "strips": [
+        "^Dai Makaimura",
+        "^1941",
+        "^Aldynes",
+        "^Madou",
+        "^Battle Ace"
+      ]
+    },
+    {
+      "system": "psx",
+      "name": "PlayStation",
+      "group": "SONY",
+      "maker": "SONY",
+      "year": 1994,
+      "strips": [
+        "^Crash Bandicoot \\(",
+        "^Final Fantasy VII",
+        "^Metal Gear Solid",
+        "^Tekken 3",
+        "^Gran Turismo",
+        "^Castlevania - Symphony",
+        "^Resident Evil"
+      ]
+    },
+    {
+      "system": "ngp",
+      "name": "Neo Geo Pocket",
+      "group": "SNK",
+      "maker": "SNK",
+      "year": 1998,
+      "strips": [
+        "^King of Fighters",
+        "^Samurai Shodown",
+        "^Neo Geo Cup",
+        "^Pocket Tennis",
+        "^Baseball Stars"
+      ]
+    },
+    {
+      "system": "ngpc",
+      "name": "Neo Geo Pocket Color",
+      "group": "SNK",
+      "maker": "SNK",
+      "year": 1999,
+      "strips": [
+        "^SNK vs\\. Capcom - The Match",
+        "^Metal Slug - 1st Mission",
+        "^Sonic",
+        "^King of Fighters R-2",
+        "^Metal Slug - 2nd Mission",
+        "^Samurai Shodown",
+        "^Fatal Fury"
+      ]
+    },
+    {
+      "system": "wonderswan",
+      "name": "WonderSwan",
+      "group": "BANDAI",
+      "maker": "BANDAI",
+      "year": 1999,
+      "strips": [
+        "^Gunpey",
+        "^Final Fantasy",
+        "^Klonoa",
+        "^Chocobo",
+        "^Rockman",
+        "^Makaimura",
+        "^Space Invaders"
+      ]
+    },
+    {
+      "system": "wonderswancolor",
+      "name": "WonderSwan Color",
+      "group": "BANDAI",
+      "maker": "BANDAI",
+      "year": 2000,
+      "strips": [
+        "^Final Fantasy \\(",
+        "^Final Fantasy IV",
+        "^Rockman",
+        "^One Piece",
+        "^Gunpey",
+        "^Final Fantasy II",
+        "^Golden Axe"
+      ]
+    },
+    {
+      "system": "atari2600",
+      "name": "Atari 2600",
+      "group": "ATARI",
+      "maker": "ATARI",
+      "year": 1977,
+      "strips": [
+        "^Pitfall! ",
+        "^Space Invaders",
+        "^Pac-Man",
+        "^River Raid",
+        "^Adventure \\(",
+        "^Asteroids",
+        "^Missile Command"
+      ]
+    },
+    {
+      "system": "atari7800",
+      "name": "Atari 7800",
+      "group": "ATARI",
+      "maker": "ATARI",
+      "year": 1986,
+      "strips": [
+        "^Ms\\. Pac-Man",
+        "^Galaga",
+        "^Dig Dug",
+        "^Donkey Kong \\(",
+        "^Asteroids",
+        "^Centipede",
+        "^Joust"
+      ]
+    }
+  ]
+}

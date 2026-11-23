@@ -1,0 +1,6 @@
+# Written by tools/copy_library.py so that each cabinet button does what it did with
+# FB Alpha on the source card.
+input_player1_btn_b = "13"
+input_player1_btn_y = "0"
+input_player1_btn_a = "12"
+input_player1_btn_x = "8"

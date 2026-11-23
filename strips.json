@@ -1,0 +1,254 @@
+{
+  "about": [
+    "The strip pictures of the console screens, which tools/make_strips.py builds. Each console has six, listed from left to right.",
+    "system and file: a screenshot in roms/<system>/snap/ of a RetroPie card. or: the same game's picture from libretro-thumbnails, with its own thumbnails, file and focus, for a card without that screenshot.",
+    "thumbnails and file: a picture from the Named_Snaps folder of that libretro-thumbnails repository on GitHub, or from the folder in folder (Named_Titles for a title screen).",
+    "focus: the centre of the game's most recognizable part, as a share of the screenshot's width.",
+    "rows: the top and bottom of the part to use, as shares of the screenshot's height, to leave out black bars and subtitles.",
+    "3d: true for 3D graphics, which grow with Lanczos resampling in place of Scale2x.",
+    "bright: a factor that lightens a dark screenshot.",
+    "A console missing here shows screenshots of its own games, chosen by the strips patterns in consoles.json."
+  ],
+  "strips": {
+    "recommended": [
+      {"system": "nes", "file": "Super Mario Bros. (World).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Super Mario Bros. (World).png", "focus": 0.5}},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Sonic The Hedgehog (USA, Europe).png", "focus": 0.48},
+      {"system": "psx", "file": "Crash Bandicoot (E) (No EDC) [SCES-00344].png", "focus": 0.5, "3d": true, "or": {"thumbnails": "Sony_-_PlayStation", "file": "Crash Bandicoot (Europe).png", "focus": 0.5}},
+      {"system": "mame-libretro", "file": "digdug.png", "focus": 0.45, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Dig Dug (rev 2).png", "focus": 0.45}},
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "Pokemon - FireRed Version (USA, Europe) (Rev 1).png", "focus": 0.82, "folder": "Named_Titles"},
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Donkey Kong Country (USA) (Rev 1).png", "focus": 0.24}
+    ],
+    "arcade": [
+      {"system": "mame-libretro", "file": "pacman.png", "focus": 0.47, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Pac-Man (Midway).png", "focus": 0.47}},
+      {"system": "mame-libretro", "file": "invaders.png", "focus": 0.47, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Space Invaders _ Space Invaders M.png", "focus": 0.47}},
+      {"system": "mame-libretro", "file": "frogger.png", "focus": 0.45, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Frogger.png", "focus": 0.45}},
+      {"system": "mame-libretro", "file": "mk2.png", "focus": 0.31, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Mortal Kombat II (rev L3.1).png", "focus": 0.58}},
+      {"system": "mame-libretro", "file": "tmnt2.png", "focus": 0.6, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).png", "focus": 0.6}},
+      {"system": "mame-libretro", "file": "qbert.png", "focus": 0.5, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Q_bert (US set 1).png", "focus": 0.42}}
+    ],
+    "neogeo": [
+      {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Metal Slug - Super Vehicle-001.png", "focus": 0.42},
+      {"system": "neogeo", "file": "kof98.png", "focus": 0.84, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "The King of Fighters '98 - The Slugfest _ King of Fighters '98 - Dream Match Never Ends (NGM-2420).png", "focus": 0.84}},
+      {"system": "neogeo", "file": "garou.png", "focus": 0.64, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Garou - Mark of the Wolves (NGM-2530).png", "focus": 0.64}},
+      {"system": "neogeo", "file": "samsho2.png", "focus": 0.58, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Samurai Shodown II _ Shin Samurai Spirits - Haohmaru Jigokuhen (NGM-063 ~ NGH-063).png", "focus": 0.2}},
+      {"system": "neogeo", "file": "pbobblen.png", "focus": 0.56, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Puzzle Bobble _ Bust-A-Move (Neo-Geo, NGM-083).png", "focus": 0.56}},
+      {"system": "neogeo", "file": "wjammers.png", "focus": 0.68, "or": {"thumbnails": "FBNeo_-_Arcade_Games", "file": "Windjammers _ Flying Power Disc.png", "focus": 0.5}}
+    ],
+    "nes": [
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Legend of Zelda, The (USA).png", "focus": 0.82},
+      {"system": "nes", "file": "Castlevania (USA).png", "focus": 0.48, "or": {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Castlevania (USA).png", "focus": 0.48}},
+      {"system": "nes", "file": "Contra (USA).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Contra (USA).png", "focus": 0.5}},
+      {"system": "nes", "file": "Mike Tyson's Punch-Out!! (Japan, USA).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Mike Tyson's Punch-Out!! (Japan, USA).png", "focus": 0.5}},
+      {"system": "nes", "file": "Kirby's Adventure (USA).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Kirby's Adventure (USA).png", "focus": 0.5}},
+      {"system": "nes", "file": "Duck Hunt (World).png", "focus": 0.55, "or": {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Duck Hunt (World).png", "focus": 0.55}}
+    ],
+    "famicom": [
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Nekketsu Kouha Kunio-kun (Japan).png", "focus": 0.49},
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Battle City (1985-09-09)(Namco)(JP).png", "focus": 0.4},
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Rockman 2 - Dr. Wily no Nazo (Japan).png", "focus": 0.49},
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Galaxian (Japan) (Rev 1).png", "focus": 0.45},
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Ganbare Goemon! - Karakuri Douchuu (Japan).png", "focus": 0.56},
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Akumajou Densetsu (Japan).png", "focus": 0.42}
+    ],
+    "fds": [
+      {"thumbnails": "Nintendo_-_Family_Computer_Disk_System", "file": "Vs. Excitebike (Japan) (En).png", "focus": 0.27},
+      {"thumbnails": "Nintendo_-_Family_Computer_Disk_System", "file": "Link no Bouken - The Legend of Zelda 2 (Japan).png", "focus": 0.5},
+      {"thumbnails": "Nintendo_-_Family_Computer_Disk_System", "file": "Hikari Shinwa - Palthena no Kagami (Japan) (Rev 1).png", "focus": 0.35},
+      {"thumbnails": "Nintendo_-_Nintendo_Entertainment_System", "file": "Pro Wrestling (USA).png", "focus": 0.34, "rows": [0.15, 1]},
+      {"thumbnails": "Nintendo_-_Family_Computer_Disk_System", "file": "Dracula II - Noroi no Fuuin (Japan).png", "focus": 0.58},
+      {"thumbnails": "Nintendo_-_Family_Computer_Disk_System", "file": "Yume Koujou Doki Doki Panic (Japan) (DV 1).png", "focus": 0.5}
+    ],
+    "gameandwatch": [
+      {"thumbnails": "Handheld_Electronic_Game", "file": "Snoopy (Nintendo, Table Top).png", "focus": 0.6},
+      {"thumbnails": "Handheld_Electronic_Game", "file": "Donkey Kong Jr. (Nintendo, Panorama Screen).png", "focus": 0.85},
+      {"thumbnails": "Handheld_Electronic_Game", "file": "Mario's Bombs Away (Nintendo, Panorama Screen).png", "focus": 0.5},
+      {"thumbnails": "Handheld_Electronic_Game", "file": "Parachute (Nintendo, Wide Screen).png", "focus": 0.4},
+      {"thumbnails": "Handheld_Electronic_Game", "file": "Mickey Mouse (Nintendo, Panorama Screen).png", "focus": 0.33},
+      {"thumbnails": "Handheld_Electronic_Game", "file": "Donkey Kong Circus (Nintendo, Panorama Screen).png", "focus": 0.53}
+    ],
+    "gb": [
+      {"thumbnails": "Nintendo_-_Game_Boy", "file": "Tetris (World) (Rev 1).png", "focus": 0.67, "folder": "Named_Titles"},
+      {"thumbnails": "Nintendo_-_Game_Boy", "file": "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).png", "focus": 0.54},
+      {"thumbnails": "Nintendo_-_Game_Boy", "file": "Wario Land - Super Mario Land 3 (World).png", "focus": 0.35},
+      {"thumbnails": "Nintendo_-_Game_Boy", "file": "Metroid II - Return of Samus (World).png", "focus": 0.57},
+      {"thumbnails": "Nintendo_-_Game_Boy", "file": "Dr. Mario (World).png", "focus": 0.73},
+      {"thumbnails": "Nintendo_-_Game_Boy", "file": "Mega Man - Dr. Wily's Revenge (USA).png", "focus": 0.45}
+    ],
+    "gbc": [
+      {"thumbnails": "Nintendo_-_Game_Boy_Color", "file": "Shantae (USA).png", "focus": 0.47, "rows": [0, 0.88]},
+      {"thumbnails": "Nintendo_-_Game_Boy_Color", "file": "Pocket Monsters Kin (Japan) (SGB Enhanced) (GB Compatible).png", "focus": 0.43},
+      {"thumbnails": "Nintendo_-_Game_Boy_Color", "file": "Legend of Zelda, The - Oracle of Seasons (USA, Australia).png", "focus": 0.53, "rows": [0.11, 1]},
+      {"thumbnails": "Nintendo_-_Game_Boy_Color", "file": "Kirby - Tilt 'n' Tumble (USA).png", "focus": 0.52, "rows": [0.08, 1]},
+      {"thumbnails": "Nintendo_-_Game_Boy_Color", "file": "Wario Land 3 (World) (En,Ja).png", "focus": 0.32},
+      {"thumbnails": "Nintendo_-_Game_Boy_Color", "file": "Ghosts'n Goblins (USA, Europe) (GB Compatible).png", "focus": 0.5}
+    ],
+    "gba": [
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "Advance Wars (USA).png", "focus": 0.25},
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "Super Mario Advance 3 - Yoshi's Island (USA).png", "focus": 0.33},
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "Legend of Zelda, The - The Minish Cap (USA).png", "focus": 0.5},
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "Metroid - Zero Mission (USA).png", "focus": 0.5},
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "Wario Land 4 (USA, Europe).png", "focus": 0.5},
+      {"thumbnails": "Nintendo_-_Game_Boy_Advance", "file": "F-Zero - Maximum Velocity (USA, Europe).png", "focus": 0.5}
+    ],
+    "snes": [
+      {"system": "snes", "file": "Super Mario World (USA).png", "focus": 0.45, "or": {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Super Mario World (USA).png", "focus": 0.45}},
+      {"system": "snes", "file": "Mega Man X (USA).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Mega Man X (USA).png", "focus": 0.5}},
+      {"system": "snes", "file": "Legend of Zelda, The - A Link to the Past (USA).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Legend of Zelda, The - A Link to the Past (USA).png", "focus": 0.79}},
+      {"system": "snes", "file": "Super Mario Kart (USA).png", "focus": 0.55, "or": {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Super Mario Kart (USA).png", "focus": 0.55}},
+      {"system": "snes", "file": "Super Metroid (Japan, USA).png", "focus": 0.37, "or": {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Super Metroid (Japan, USA) (En,Ja).png", "focus": 0.37}},
+      {"system": "snes", "file": "Star Fox (USA).png", "focus": 0.5, "or": {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Star Fox (USA).png", "focus": 0.5}}
+    ],
+    "sfc": [
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Rockman 7 - Shukumei no Taiketsu! (Japan).png", "focus": 0.33},
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Final Fantasy VI (Japan).png", "focus": 0.82, "rows": [0, 0.62]},
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "ActRaiser (Japan) (Virtual Console).png", "focus": 0.57},
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Seiken Densetsu 3 (Japan) (Taikenban Sample ROM).png", "focus": 0.52},
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (Japan) (Virtual Console).png", "focus": 0.47},
+      {"thumbnails": "Nintendo_-_Super_Nintendo_Entertainment_System", "file": "Super Bomberman 5 (Japan).png", "focus": 0.125}
+    ],
+    "sg-1000": [
+      {"thumbnails": "Sega_-_SG-1000", "file": "Elevator Action (Japan).png", "focus": 0.5},
+      {"thumbnails": "Sega_-_SG-1000", "file": "Wonder Boy (Japan).png", "focus": 0.52, "rows": [0.3, 1]},
+      {"thumbnails": "Sega_-_SG-1000", "file": "Bomb Jack (Japan).png", "focus": 0.37, "rows": [0.2, 1]},
+      {"thumbnails": "Sega_-_SG-1000", "file": "Flicky (Japan).png", "focus": 0.53, "rows": [0, 0.9]},
+      {"thumbnails": "Sega_-_SG-1000", "file": "Champion Boxing (Japan).png", "focus": 0.7},
+      {"thumbnails": "Sega_-_SG-1000", "file": "Zaxxon (Japan).png", "focus": 0.12}
+    ],
+    "markiii": [
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Zillion (Japan, Europe) (En).png", "focus": 0.53},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Hokuto no Ken (Japan).png", "focus": 0.27, "rows": [0.12, 1]},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Fantasy Zone (Japan) (En).png", "focus": 0.3},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Phantasy Star (Brazil).png", "focus": 0.52},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Space Harrier (Japan, USA) (En).png", "focus": 0.55},
+      {"system": "markiii", "file": "Final Bubble Bobble (Japan).png", "focus": 0.3, "or": {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Final Bubble Bobble (Japan).png", "focus": 0.3}}
+    ],
+    "mastersystem": [
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Psycho Fox (USA, Europe, Brazil) (En).png", "focus": 0.45},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Prince of Persia (Europe, Brazil) (En).png", "focus": 0.46},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Sonic The Hedgehog 2 (Europe, Brazil) (En).png", "focus": 0.56, "rows": [0.15, 1]},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Alex Kidd in Miracle World (USA, Europe, Brazil) (En) (Rev 1).png", "focus": 0.44},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Wonder Boy III - The Dragon's Trap (USA, Europe).png", "focus": 0.52, "rows": [0.2, 1]},
+      {"thumbnails": "Sega_-_Master_System_-_Mark_III", "file": "Altered Beast (USA, Europe, Brazil) (En).png", "focus": 0.36, "rows": [0.3, 1]}
+    ],
+    "megadrive": [
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Gunstar Heroes (USA).png", "focus": 0.5},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Aladdin (Europe).png", "focus": 0.45},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Castle of Illusion Starring Mickey Mouse (USA, Europe).png", "focus": 0.6},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Streets of Rage 2 (USA).png", "focus": 0.4},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Golden Axe (World).png", "focus": 0.52},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Earthworm Jim (USA).png", "focus": 0.5}
+    ],
+    "megadrive-japan": [
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Dragon Ball Z - Buyuu Retsuden (Japan).png", "focus": 0.37, "rows": [0.15, 1]},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Vampire Killer (Japan).png", "focus": 0.52, "rows": [0.16, 1]},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Snow Bros. - Nick _ Tom (Japan).png", "focus": 0.28, "rows": [0, 0.9]},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Monster World IV (Japan).png", "focus": 0.48, "rows": [0.18, 1]},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Thunder Force IV (Japan).png", "focus": 0.3},
+      {"thumbnails": "Sega_-_Mega_Drive_-_Genesis", "file": "Bishoujo Senshi Sailor Moon (Japan).png", "focus": 0.43, "rows": [0.08, 0.93]}
+    ],
+    "segacd": [
+      {"thumbnails": "Sega_-_Mega-CD_-_Sega_CD", "file": "Final Fight CD (Europe).png", "focus": 0.2, "rows": [0.13, 1]},
+      {"thumbnails": "Sega_-_Mega-CD_-_Sega_CD", "file": "Sonic CD (USA).png", "focus": 0.33},
+      {"thumbnails": "Sega_-_Mega-CD_-_Sega_CD", "file": "Road Avenger (Europe).png", "focus": 0.565, "rows": [0, 0.93]},
+      {"thumbnails": "Sega_-_Mega-CD_-_Sega_CD", "file": "NBA Jam (Japan).png", "focus": 0.47, "rows": [0.09, 1]},
+      {"thumbnails": "Sega_-_Mega-CD_-_Sega_CD", "file": "Time Gal (Europe).png", "focus": 0.5, "rows": [0.1, 0.77]},
+      {"thumbnails": "Sega_-_Mega-CD_-_Sega_CD", "file": "Mickey Mania (Europe).png", "focus": 0.46}
+    ],
+    "sega32x": [
+      {"thumbnails": "Sega_-_32X", "file": "Star Wars Arcade (USA).png", "focus": 0.4, "3d": true},
+      {"thumbnails": "Sega_-_32X", "file": "Virtua Fighter (Europe).png", "focus": 0.45, "3d": true},
+      {"thumbnails": "Sega_-_32X", "file": "After Burner Complete (Japan, USA) (En).png", "focus": 0.6},
+      {"thumbnails": "Sega_-_32X", "file": "Knuckles' Chaotix (Japan, USA) (En).png", "focus": 0.52},
+      {"thumbnails": "Sega_-_32X", "file": "Doom (Japan, USA) (En).png", "focus": 0.57, "3d": true},
+      {"thumbnails": "Sega_-_32X", "file": "Virtua Racing Deluxe (USA).png", "focus": 0.5, "rows": [0.25, 0.93], "3d": true}
+    ],
+    "gamegear": [
+      {"thumbnails": "Sega_-_Game_Gear", "file": "Columns (Japan) (En).png", "focus": 0.45},
+      {"thumbnails": "Sega_-_Game_Gear", "file": "Sonic The Hedgehog - Triple Trouble (USA, Europe).png", "focus": 0.6},
+      {"thumbnails": "Sega_-_Game_Gear", "file": "Ristar (World).png", "focus": 0.48},
+      {"thumbnails": "Sega_-_Game_Gear", "file": "Lion King, The (USA, Brazil) (En).png", "focus": 0.35},
+      {"thumbnails": "Sega_-_Game_Gear", "file": "Ecco the Dolphin (USA, Europe, Brazil) (En).png", "focus": 0.45},
+      {"thumbnails": "Sega_-_Game_Gear", "file": "Mortal Kombat (USA, Europe).png", "focus": 0.52, "rows": [0.13, 1]}
+    ],
+    "tg16": [
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Neutopia II (Japan).png", "focus": 0.61},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Bonk's Adventure (USA).png", "focus": 0.51},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Devil's Crush (USA).png", "focus": 0.53},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Military Madness (USA).png", "focus": 0.36},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Splatterhouse (USA).png", "focus": 0.4},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Blazing Lazers (USA).png", "focus": 0.56}
+    ],
+    "pcengine": [
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "R-Type II (Japan).png", "focus": 0.235},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Street Fighter II' - Champion Edition (Japan).png", "focus": 0.36, "rows": [0.067, 0.9]},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Bomberman '94 (Japan).png", "focus": 0.245},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Gradius (Japan).png", "focus": 0.575},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Takahashi Meijin no Shin Bouken-jima (Japan).png", "focus": 0.25},
+      {"thumbnails": "NEC_-_PC_Engine_-_TurboGrafx_16", "file": "Detana!! TwinBee (Japan).png", "focus": 0.43}
+    ],
+    "supergrafx": [
+      {"thumbnails": "NEC_-_PC_Engine_SuperGrafx", "file": "Aldynes - The Misson Code for Rage Crisis (Japan) (En).png", "focus": 0.49},
+      {"thumbnails": "NEC_-_PC_Engine_SuperGrafx", "file": "Daimakaimura (Japan) (En).png", "focus": 0.49},
+      {"thumbnails": "NEC_-_PC_Engine_SuperGrafx", "file": "1941 - Counter Attack (Japan).png", "focus": 0.53},
+      {"thumbnails": "NEC_-_PC_Engine_SuperGrafx", "file": "Battle Ace (Japan) (En).png", "focus": 0.395},
+      {"thumbnails": "NEC_-_PC_Engine_SuperGrafx", "file": "Madou King Granzort (Japan) (En).png", "focus": 0.76},
+      {"thumbnails": "NEC_-_PC_Engine_SuperGrafx", "file": "Daimakaimura (Japan) (En).png", "focus": 0.72}
+    ],
+    "psx": [
+      {"thumbnails": "Sony_-_PlayStation", "file": "Metal Gear Solid - VR Missions (USA).png", "focus": 0.28, "3d": true},
+      {"thumbnails": "Sony_-_PlayStation", "file": "Wipeout XL (USA).png", "focus": 0.5, "3d": true},
+      {"system": "psx", "file": "Castlevania - Symphony of the Night (E) [SLES-00524].png", "focus": 0.24, "or": {"thumbnails": "Sony_-_PlayStation", "file": "Castlevania - Symphony of the Night (Europe).png", "focus": 0.48}},
+      {"thumbnails": "Sony_-_PlayStation", "file": "Street Fighter Alpha 3 (USA).png", "focus": 0.55},
+      {"thumbnails": "Sony_-_PlayStation", "file": "Final Fantasy VII (Spain) (Disc 1).png", "focus": 0.76, "3d": true},
+      {"thumbnails": "Sony_-_PlayStation", "file": "Tony Hawk's Pro Skater 2 (USA).png", "focus": 0.5, "3d": true}
+    ],
+    "ngp": [
+      {"system": "ngp", "file": "Neo Geo Cup '98 (Japan, Europe).png", "focus": 0.58, "or": {"thumbnails": "SNK_-_Neo_Geo_Pocket", "file": "Neo Geo Cup '98 (Japan, Europe) (En,Ja).png", "focus": 0.58}},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket", "file": "King of Fighters R-1 - Pocket Fighting Series (Japan, Europe) (En,Ja).png", "focus": 0.85},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket", "file": "Pocket Tennis - Pocket Sports Series (Japan, Europe) (En,Ja).png", "focus": 0.48},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket", "file": "Baseball Stars - Pocket Sports Series (Japan, Europe) (En,Ja).png", "focus": 0.46},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket", "file": "Samurai Shodown! - Pocket Fighting Series (Japan, Europe) (En,Ja).png", "focus": 0.85},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket", "file": "Neo Cherry Master - Real Casino Series (Japan) (En,Ja).png", "focus": 0.37}
+    ],
+    "ngpc": [
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket_Color", "file": "Sonic The Hedgehog - Pocket Adventure (World) (Demo).png", "focus": 0.3},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket_Color", "file": "SNK vs. Capcom - The Match of the Millennium (World) (En,Ja).png", "focus": 0.22},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket_Color", "file": "Fatal Fury F-Contact - Pocket Fighting Series (World) (En,Ja) (Demo).png", "focus": 0.37},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket_Color", "file": "Metal Slug - 2nd Mission (World) (En,Ja).png", "focus": 0.42},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket_Color", "file": "King of Fighters R-2 - Pocket Fighting Series (World) (En,Ja).png", "focus": 0.18},
+      {"thumbnails": "SNK_-_Neo_Geo_Pocket_Color", "file": "Fantastic Night Dreams - Cotton (Europe).png", "focus": 0.1}
+    ],
+    "wonderswan": [
+      {"thumbnails": "Bandai_-_WonderSwan", "file": "Kaze no Klonoa - Moonlight Museum (Japan).png", "focus": 0.5},
+      {"thumbnails": "Bandai_-_WonderSwan", "file": "Rockman & Forte - Mirai Kara no Chousensha (Japan)-image.png", "focus": 0.6},
+      {"thumbnails": "Bandai_-_WonderSwan", "file": "GunPey (1999-03-04)(Bandai)[SWJ-BAN001].png", "focus": 0.5},
+      {"thumbnails": "Bandai_-_WonderSwan", "file": "Chocobo no Fushigi na Dungeon for WonderSwan Rev 1 (1999)(Bandai)[SWJ-BAN002].png", "focus": 0.452},
+      {"thumbnails": "Bandai_-_WonderSwan", "file": "Makaimura for WonderSwan (Japan).png", "focus": 0.5},
+      {"thumbnails": "Bandai_-_WonderSwan", "file": "Pocket Fighter (2000-04-06)(Bandai)[SWJ-BAN00A].png", "focus": 0.27}
+    ],
+    "wonderswancolor": [
+      {"thumbnails": "Bandai_-_WonderSwan_Color", "file": "Final Fantasy IV (2002-03-28)(Squaresoft)[SWJ-SQRC09].png", "focus": 0.86, "rows": [0, 0.64]},
+      {"thumbnails": "Bandai_-_WonderSwan_Color", "file": "Rockman EXE WS (2003-02-08)(Bandai)[SWJ-BANC35].png", "focus": 0.53},
+      {"thumbnails": "Bandai_-_WonderSwan_Color", "file": "From TV Animation One Piece - Grand Battle Swan Colosseum (Japan).png", "focus": 0.6},
+      {"thumbnails": "Bandai_-_WonderSwan_Color", "file": "Mr. Driller (2001-04-05)(Namco)[SWJ-NMCC01].png", "focus": 0.3, "rows": [0.29, 1]},
+      {"thumbnails": "Bandai_-_WonderSwan_Color", "file": "Digimon Tamers - Battle Spirit (Japan, Korea) (En,Ja).png", "focus": 0.22},
+      {"thumbnails": "Bandai_-_WonderSwan_Color", "file": "Final Fantasy (Japan).png", "focus": 0.865, "rows": [0, 0.7]}
+    ],
+    "atari2600": [
+      {"thumbnails": "Atari_-_2600", "file": "Pitfall! - Pitfall Harry's Jungle Adventure (Unknown).png", "focus": 0.163, "rows": [0, 0.9]},
+      {"thumbnails": "Atari_-_2600", "file": "Donkey Kong (USA).png", "focus": 0.35},
+      {"thumbnails": "Atari_-_2600", "file": "River Raid (USA).png", "focus": 0.558},
+      {"thumbnails": "Atari_-_2600", "file": "Adventure (1978)(Atari - Sears)(NTSC)[CX2613, 49-75154].png", "focus": 0.42},
+      {"thumbnails": "Atari_-_2600", "file": "Kaboom! (Paddle) (CCE).png", "focus": 0.17},
+      {"thumbnails": "Atari_-_2600", "file": "Enduro (USA).png", "focus": 0.528, "rows": [0, 0.91]}
+    ],
+    "atari7800": [
+      {"thumbnails": "Atari_-_7800", "file": "Galaga (USA).png", "focus": 0.875},
+      {"thumbnails": "Atari_-_7800", "file": "Joust (Europe).png", "focus": 0.795},
+      {"thumbnails": "Atari_-_7800", "file": "Centipede (Europe).png", "focus": 0.56, "rows": [0.12, 0.9]},
+      {"thumbnails": "Atari_-_7800", "file": "Ms. Pac-Man (USA).png", "focus": 0.78, "rows": [0.15, 1]},
+      {"thumbnails": "Atari_-_7800", "file": "Double Dragon (USA).png", "focus": 0.35},
+      {"thumbnails": "Atari_-_7800", "file": "Pole Position II (USA).png", "focus": 0.467}
+    ]
+  }
+}

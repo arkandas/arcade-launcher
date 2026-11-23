@@ -1,0 +1,20 @@
+{
+  "about": [
+    "The brand of the cabinet: its name and colours. logo.svg next to this file is the logo, drawn in white.",
+    "name: the heading of the Recommended group on the console screen, in capitals.",
+    "accent: highlights, selection frames and key caps. text and muted: the two text colours. ink: the darkest ground and the text on accent.",
+    "ground: the background gradient from left to right. load_track: the unlit part of the loading bar. start_strips: the six strips of the start animation, which it shades darker and lighter.",
+    "warning: facts on the settings screen that need attention. Colours are red, green and blue from 0 to 255."
+  ],
+  "name": "Arkandas",
+  "colours": {
+    "accent": [255, 164, 91],
+    "text": [241, 245, 249],
+    "muted": [141, 161, 185],
+    "ink": [7, 14, 19],
+    "ground": [[7, 14, 19], [11, 23, 31], [18, 35, 46]],
+    "load_track": [64, 41, 23],
+    "start_strips": [32, 63, 84],
+    "warning": [249, 209, 89]
+  }
+}

@@ -1,0 +1,13 @@
+# fetched from the card or drawn by tools/build_assets.py
+build/
+
+# built on the Pi
+frontend/*.o
+frontend/launcher
+frontend/launcher-boot
+frontend/launcher-load
+# written by tools/build_assets.py from brand/brand.json
+frontend/brand.h
+
+__pycache__/
+.DS_Store

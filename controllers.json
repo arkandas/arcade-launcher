@@ -1,0 +1,19 @@
+{
+  "about": [
+    "The controllers of the cabinet, by the name Linux gives each one.",
+    "a, b, x, y, l, r, select, start: the number of the button that does this job in the games.",
+    "up_down_swapped: the stick's up and down wires sit on each other's pins.",
+    "open, back: the buttons that open and play, and go back, in the menu. Without them the menu uses a and b.",
+    "next_letter, previous_letter: buttons that jump to the next or previous initial letter in a game list, and to the next or previous console on the console screen.",
+    "favourite: the button that adds a game to Recommended or takes it out, in place of select. Player 2 uses Start for this job.",
+    "pi/make_library.py hands the menu's buttons to the menu. On every start it writes a preset with all of them and the hotkeys into retroarch-joypads, in place of RetroPie's preset for the same controller.",
+    "GPIO Controller 1 and 2 are the cabinet's two sticks on the Pi's pins (driver mk_arcade_joystick_rpi, map=1,2). hardware/README.md lists the job of every button."
+  ],
+  "controllers": {
+    "usb gamepad": { "a": 1, "b": 2, "x": 0, "y": 3, "l": 4, "r": 5, "select": 8, "start": 9, "up_down_swapped": false },
+    "GPIO Controller 1": { "a": 1, "b": 5, "x": 2, "y": 4, "l": 3, "r": 0, "select": 6, "start": 7, "up_down_swapped": true,
+                           "open": 4, "back": 3, "next_letter": 0, "previous_letter": 2 },
+    "GPIO Controller 2": { "a": 1, "b": 5, "x": 2, "y": 4, "l": 3, "r": 0, "select": 6, "start": 7, "up_down_swapped": true,
+                           "open": 4, "back": 3, "next_letter": 0, "previous_letter": 2, "favourite": 7 }
+  }
+}
