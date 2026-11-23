@@ -763,14 +763,17 @@ static std::vector<std::string> wrap_text(Font* font, float size, const std::str
     return lines;
 }
 
-// Draws up to three wrapped lines downwards from y.
-static void draw_wrapped(Font* font, float size, float x, float y, float w, const std::string& s, Color c) {
+// Draws up to three wrapped lines downwards from y. Returns the baseline of the last line.
+static float draw_wrapped(Font* font, float size, float x, float y, float w, const std::string& s, Color c) {
     std::vector<std::string> lines = wrap_text(font, size, s, w);
     if (lines.size() > 3)
         lines.resize(3);
-    float step = size * 1.25f;
-    for (size_t i = 0; i < lines.size(); i++)
-        text::draw(font, size, x, y + step * i + size * 0.95f, text::fit(font, size, lines[i], w), c);
+    float step = size * 1.25f, baseline = y + size * 0.95f;
+    for (size_t i = 0; i < lines.size(); i++) {
+        baseline = y + step * i + size * 0.95f;
+        text::draw(font, size, x, baseline, text::fit(font, size, lines[i], w), c);
+    }
+    return baseline;
 }
 
 static bool settled(Picture* p) {
@@ -1794,11 +1797,13 @@ static void draw_settings() {
 
     const Setting& s = SETTINGS[setting_sel];
     text::draw(bold, 64, 787, 330, s.name, TEXT);
-    draw_wrapped(regular, 29, 787, 372, 960, s.about, MUTED);
+    // The prompt of an entry that asks for a second press, and the note after a rescan, sit
+    // under the description, apart from the THIS MACHINE label further down.
+    float prompt_y = draw_wrapped(regular, 29, 787, 372, 960, s.about, MUTED) + 58;
     if (s.confirm && now_s < confirm_until)
-        mono_text(21, 787, 560, std::string("PRESS A AGAIN TO ") + upper(s.name), ACCENT);
+        mono_text(21, 787, prompt_y, std::string("PRESS A AGAIN TO ") + upper(s.name), ACCENT);
     else if (!note.empty() && now_s < note_until)
-        mono_text(21, 787, 560, note, ACCENT);
+        mono_text(21, 787, prompt_y, note, ACCENT);
 
     mono_text(18, 787, FACTS_TOP - 24, "THIS MACHINE", ACCENT);
     // The version of this program, level with THIS MACHINE and ending at the right edge of the tiles.
